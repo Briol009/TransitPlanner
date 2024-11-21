@@ -1,0 +1,281 @@
+<metadata xml:lang="en">
+	<Esri>
+		<CreaDate>20231207</CreaDate>
+		<CreaTime>06511800</CreaTime>
+		<ArcGISFormat>1.0</ArcGISFormat>
+		<SyncOnce>FALSE</SyncOnce>
+		<DataProperties>
+			<lineage>
+				<Process ToolSource="c:\myarcgispro\Resources\ArcToolbox\toolboxes\Data Management Tools.tbx\RegisterWithGeodatabase" Date="20221220" Time="153734">RegisterWithGeodatabase L:\Resources\DatabaseConnections\SDE@GISStore.sde\GISStore.dbo.VWTransitRoutes ObjectID shape Polyline "GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]];-400 -400 1000000000;-100000 10000;-100000 10000;8.98315284119521E-09;0.001;0.001;IsHighPrecision" #</Process>
+				<Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Data Management Tools.tbx\Project" Date="20231207" Time="065135">Project \\rafsshare.mc.local\gis\gis_library\Resources\DatabaseConnections\Azure\SDE@GISStore.sde\GISStore.dbo.VWTransitRoutes \\rafsshare.mc.local\gis\devel\data_devel\Transit_Stage\scratch.gdb\TransitRoutesTemp PROJCS["NAD_1983_UTM_Zone_15N",GEOGCS["GCS_North_American_1983",DATUM["D_North_American_1983",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",-93.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]] WGS_1984_(ITRF00)_To_NAD_1983 GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]] NO_PRESERVE_SHAPE # NO_VERTICAL</Process>
+				<Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Analysis Tools.tbx\PairwiseDissolve" Date="20231207" Time="065214">PairwiseDissolve \\rafsshare.mc.local\gis\devel\data_devel\Transit_Stage\scratch.gdb\TransitRoutesTemp \\rafsshare.mc.local\gis\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes route;routesort;RouteDescription;RouteOperator;EffectiveDate;payleavedirectionid;routepayleave;RouteClass;IsPublic;wk_ftrip;wk_ltrip;wk_span;wk_trip_freq;sat_ftrip;sat_ltrip;sat_span;sat_trip_freq;sun_ftrip;sun_ltrip;sun_span;sun_trip_freq # MULTI_PART</Process>
+				<Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20231208" Time="232700">FeatureClassToFeatureClass \\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes \\rafs2a.mc.local\gis\gis_library\GDRS\STAGE\trans_transit_routes\fgdb\trans_transit_routes.gdb TransitRoutes # "route "route" true true false 6 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,route,0,6;routesort "routesort" true true false 4 Long 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,routesort,-1,-1;RouteDescription "RouteDescription" true true false 100 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,RouteDescription,0,100;RouteOperator "RouteOperator" true true false 2 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,RouteOperator,0,2;EffectiveDate "EffectiveDate" true true false 8 Date 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,EffectiveDate,-1,-1;payleavedirectionid "payleavedirectionid" true true false 4 Long 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,payleavedirectionid,-1,-1;routepayleave "routepayleave" true true false 4 Long 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,routepayleave,-1,-1;RouteClass "RouteClass" true true false 20 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,RouteClass,0,20;IsPublic "IsPublic" true true false 4 Long 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,IsPublic,-1,-1;wk_ftrip "wk_ftrip" true true false 30 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,wk_ftrip,0,30;wk_ltrip "wk_ltrip" true true false 30 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,wk_ltrip,0,30;wk_span "wk_span" true true false 30 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,wk_span,0,30;wk_trip_freq "wk_trip_freq" true true false 4 Long 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,wk_trip_freq,-1,-1;sat_ftrip "sat_ftrip" true true false 30 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,sat_ftrip,0,30;sat_ltrip "sat_ltrip" true true false 30 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,sat_ltrip,0,30;sat_span "sat_span" true true false 30 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,sat_span,0,30;sat_trip_freq "sat_trip_freq" true true false 4 Long 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,sat_trip_freq,-1,-1;sun_ftrip "sun_ftrip" true true false 30 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,sun_ftrip,0,30;sun_ltrip "sun_ltrip" true true false 30 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,sun_ltrip,0,30;sun_span "sun_span" true true false 30 Text 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,sun_span,0,30;sun_trip_freq "sun_trip_freq" true true false 4 Long 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,sun_trip_freq,-1,-1;shape_Length "shape_Length" false true true 8 Double 0 0,First,#,\\rafsshare.mc.local\GIS\devel\data_devel\Transit_Stage\transit_stage.gdb\TransitRoutes,shape_Length,-1,-1" #</Process>
+				<Process ToolSource="C:\program files\arcgis\server\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20231211" Time="235646">FeatureClassToFeatureClass /var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes /var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\shp TransitRoutes.shp # "route "route" true true false 6 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,route,-1,-1;routesort "routesort" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,routesort,-1,-1;RouteDescr "RouteDescription" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,RouteDescription,-1,-1;RouteOpera "RouteOperator" true true false 2 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,RouteOperator,-1,-1;EffectiveD "EffectiveDate" true true false 8 Date 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,EffectiveDate,-1,-1;payleavedi "payleavedirectionid" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,payleavedirectionid,-1,-1;routepayle "routepayleave" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,routepayleave,-1,-1;RouteClass "RouteClass" true true false 20 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,RouteClass,-1,-1;IsPublic "IsPublic" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,IsPublic,-1,-1;wk_ftrip "wk_ftrip" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,wk_ftrip,-1,-1;wk_ltrip "wk_ltrip" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,wk_ltrip,-1,-1;wk_span "wk_span" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,wk_span,-1,-1;wk_trip_fr "wk_trip_freq" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,wk_trip_freq,-1,-1;sat_ftrip "sat_ftrip" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,sat_ftrip,-1,-1;sat_ltrip "sat_ltrip" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,sat_ltrip,-1,-1;sat_span "sat_span" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,sat_span,-1,-1;sat_trip_f "sat_trip_freq" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,sat_trip_freq,-1,-1;sun_ftrip "sun_ftrip" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,sun_ftrip,-1,-1;sun_ltrip "sun_ltrip" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,sun_ltrip,-1,-1;sun_span "sun_span" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,sun_span,-1,-1;sun_trip_f "sun_trip_freq" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,sun_trip_freq,-1,-1;Shape_Leng "Shape_Leng" false true true 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metc\trans_transit_routes\fgdb\trans_transit_routes.gdb\TransitRoutes,Shape_Length,-1,-1" #</Process>
+				<Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Conversion Tools.tbx\ExportFeatures" Date="20231213" Time="220150">ExportFeatures TransitRoutes C:\Users\Logan\Documents\ArcGIS\Projects\MyProject24\MyProject24.gdb\Green_Line # NOT_USE_ALIAS "route "route" true true false 6 Text 0 0,First,#,TransitRoutes,route,0,5;routesort "routesort" true true false 10 Long 0 10,First,#,TransitRoutes,routesort,-1,-1;RouteDescr "RouteDescr" true true false 100 Text 0 0,First,#,TransitRoutes,RouteDescr,0,99;RouteOpera "RouteOpera" true true false 2 Text 0 0,First,#,TransitRoutes,RouteOpera,0,1;EffectiveD "EffectiveD" true true false 8 Date 0 0,First,#,TransitRoutes,EffectiveD,-1,-1;payleavedi "payleavedi" true true false 10 Long 0 10,First,#,TransitRoutes,payleavedi,-1,-1;routepayle "routepayle" true true false 10 Long 0 10,First,#,TransitRoutes,routepayle,-1,-1;RouteClass "RouteClass" true true false 20 Text 0 0,First,#,TransitRoutes,RouteClass,0,19;IsPublic "IsPublic" true true false 10 Long 0 10,First,#,TransitRoutes,IsPublic,-1,-1;wk_ftrip "wk_ftrip" true true false 30 Text 0 0,First,#,TransitRoutes,wk_ftrip,0,29;wk_ltrip "wk_ltrip" true true false 30 Text 0 0,First,#,TransitRoutes,wk_ltrip,0,29;wk_span "wk_span" true true false 30 Text 0 0,First,#,TransitRoutes,wk_span,0,29;wk_trip_fr "wk_trip_fr" true true false 10 Long 0 10,First,#,TransitRoutes,wk_trip_fr,-1,-1;sat_ftrip "sat_ftrip" true true false 30 Text 0 0,First,#,TransitRoutes,sat_ftrip,0,29;sat_ltrip "sat_ltrip" true true false 30 Text 0 0,First,#,TransitRoutes,sat_ltrip,0,29;sat_span "sat_span" true true false 30 Text 0 0,First,#,TransitRoutes,sat_span,0,29;sat_trip_f "sat_trip_f" true true false 10 Long 0 10,First,#,TransitRoutes,sat_trip_f,-1,-1;sun_ftrip "sun_ftrip" true true false 30 Text 0 0,First,#,TransitRoutes,sun_ftrip,0,29;sun_ltrip "sun_ltrip" true true false 30 Text 0 0,First,#,TransitRoutes,sun_ltrip,0,29;sun_span "sun_span" true true false 30 Text 0 0,First,#,TransitRoutes,sun_span,0,29;sun_trip_f "sun_trip_f" true true false 10 Long 0 10,First,#,TransitRoutes,sun_trip_f,-1,-1;Shape_Leng "Shape_Leng" true true false 19 Double 0 0,First,#,TransitRoutes,Shape_Leng,-1,-1" #</Process><Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Conversion Tools.tbx\ExportFeatures" Date="20231213" Time="220732">ExportFeatures Green_Line "C:\Users\Logan\Desktop\School Files\Random\Transit\green_line.shp" # NOT_USE_ALIAS "route "route" true true false 6 Text 0 0,First,#,Green_Line,route,0,5;routesort "routesort" true true false 4 Long 0 0,First,#,Green_Line,routesort,-1,-1;RouteDescr "RouteDescr" true true false 100 Text 0 0,First,#,Green_Line,RouteDescr,0,99;RouteOpera "RouteOpera" true true false 2 Text 0 0,First,#,Green_Line,RouteOpera,0,1;EffectiveD "EffectiveD" true true false 8 Date 0 0,First,#,Green_Line,EffectiveD,-1,-1;payleavedi "payleavedi" true true false 4 Long 0 0,First,#,Green_Line,payleavedi,-1,-1;routepayle "routepayle" true true false 4 Long 0 0,First,#,Green_Line,routepayle,-1,-1;RouteClass "RouteClass" true true false 20 Text 0 0,First,#,Green_Line,RouteClass,0,19;IsPublic "IsPublic" true true false 4 Long 0 0,First,#,Green_Line,IsPublic,-1,-1;wk_ftrip "wk_ftrip" true true false 30 Text 0 0,First,#,Green_Line,wk_ftrip,0,29;wk_ltrip "wk_ltrip" true true false 30 Text 0 0,First,#,Green_Line,wk_ltrip,0,29;wk_span "wk_span" true true false 30 Text 0 0,First,#,Green_Line,wk_span,0,29;wk_trip_fr "wk_trip_fr" true true false 4 Long 0 0,First,#,Green_Line,wk_trip_fr,-1,-1;sat_ftrip "sat_ftrip" true true false 30 Text 0 0,First,#,Green_Line,sat_ftrip,0,29;sat_ltrip "sat_ltrip" true true false 30 Text 0 0,First,#,Green_Line,sat_ltrip,0,29;sat_span "sat_span" true true false 30 Text 0 0,First,#,Green_Line,sat_span,0,29;sat_trip_f "sat_trip_f" true true false 4 Long 0 0,First,#,Green_Line,sat_trip_f,-1,-1;sun_ftrip "sun_ftrip" true true false 30 Text 0 0,First,#,Green_Line,sun_ftrip,0,29;sun_ltrip "sun_ltrip" true true false 30 Text 0 0,First,#,Green_Line,sun_ltrip,0,29;sun_span "sun_span" true true false 30 Text 0 0,First,#,Green_Line,sun_span,0,29;sun_trip_f "sun_trip_f" true true false 4 Long 0 0,First,#,Green_Line,sun_trip_f,-1,-1;Shape_Leng "Shape_Leng" true true false 8 Double 0 0,First,#,Green_Line,Shape_Leng,-1,-1;Shape_Length "Shape_Length" false true true 8 Double 0 0,First,#,Green_Line,Shape_Length,-1,-1" #</Process></lineage>
+			<itemProps>
+				<itemLocation>
+					<linkage Sync="TRUE">file://\\L2G-RBLADE\C$\Users\Logan\Desktop\School Files\Random\Transit\green_line.shp</linkage>
+					<protocol Sync="TRUE">Local Area Network</protocol>
+				</itemLocation>
+				<itemName Sync="TRUE">green_line</itemName>
+				<imsContentType Sync="TRUE">002</imsContentType>
+				<itemSize Sync="TRUE">0.000</itemSize>
+			</itemProps>
+			<coordRef>
+				<type Sync="TRUE">Projected</type>
+				<geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn>
+				<csUnits Sync="TRUE">Linear Unit: Meter (1.000000)</csUnits>
+				<projcsn Sync="TRUE">NAD_1983_UTM_Zone_15N</projcsn>
+				<peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/3.2.0'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_UTM_Zone_15N&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,500000.0],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-93.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9996],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1.0],AUTHORITY[&amp;quot;EPSG&amp;quot;,26915]]&lt;/WKT&gt;&lt;XOrigin&gt;-5120900&lt;/XOrigin&gt;&lt;YOrigin&gt;-9998100&lt;/YOrigin&gt;&lt;XYScale&gt;450445547.3910538&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.001&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;26915&lt;/WKID&gt;&lt;LatestWKID&gt;26915&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml>
+			</coordRef>
+		</DataProperties>
+		<SyncDate>20231213</SyncDate>
+		<SyncTime>22073200</SyncTime>
+		<ModDate>20231213</ModDate>
+		<ModTime>22073200</ModTime>
+	</Esri>
+	<dataIdInfo>
+		<envirDesc Sync="TRUE">Microsoft Windows 10 Version 10.0 (Build 19045) ; Esri ArcGIS 13.2.0.49743</envirDesc>
+		<dataLang>
+			<languageCode value="eng" Sync="TRUE"/>
+			<countryCode value="USA" Sync="TRUE"/>
+		</dataLang>
+		<idCitation>
+			<resTitle Sync="TRUE">green_line</resTitle>
+			<presForm>
+				<PresFormCd value="005" Sync="TRUE"/>
+			</presForm>
+		</idCitation>
+		<spatRpType>
+			<SpatRepTypCd value="001" Sync="TRUE"/>
+		</spatRpType>
+	</dataIdInfo>
+	<mdLang>
+		<languageCode value="eng" Sync="TRUE"/>
+		<countryCode value="USA" Sync="TRUE"/>
+	</mdLang>
+	<distInfo>
+		<distFormat>
+			<formatName Sync="TRUE">Shapefile</formatName>
+		</distFormat>
+		<distTranOps>
+			<transSize Sync="TRUE">0.000</transSize>
+		</distTranOps>
+	</distInfo>
+	<mdHrLv>
+		<ScopeCd value="005" Sync="TRUE"/>
+	</mdHrLv>
+	<mdHrLvName Sync="TRUE">dataset</mdHrLvName>
+	<refSysInfo>
+		<RefSystem>
+			<refSysID>
+				<identCode code="26915" Sync="TRUE"/>
+				<idCodeSpace Sync="TRUE">EPSG</idCodeSpace>
+				<idVersion Sync="TRUE">6.11(3.0.1)</idVersion>
+			</refSysID>
+		</RefSystem>
+	</refSysInfo>
+	<spatRepInfo>
+		<VectSpatRep><geometObjs Name="green_line"><geoObjTyp><GeoObjTypCd value="002" Sync="TRUE"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">0</geoObjCnt></geometObjs><topLvl><TopoLevCd value="001" Sync="TRUE"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo>
+	<spdoinfo>
+		<ptvctinf><esriterm Name="green_line"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom code="3" Sync="TRUE"></efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo>
+	<eainfo>
+		<detailed Name="green_line">
+			<enttyp>
+				<enttypl Sync="TRUE">green_line</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt>
+				<enttypc Sync="TRUE">0</enttypc>
+			</enttyp>
+			<attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr>
+				<attrlabl Sync="TRUE">shape</attrlabl>
+				<attalias Sync="TRUE">Shape</attalias>
+				<attrtype Sync="TRUE">Geometry</attrtype>
+				<attwidth Sync="TRUE">0</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Feature geometry.</attrdef>
+				<attrdefs Sync="TRUE">Esri</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Coordinates defining the features.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">route</attrlabl>
+				<attalias Sync="TRUE">route</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">6</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">routesort</attrlabl>
+				<attalias Sync="TRUE">routesort</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">RouteDescr</attrlabl>
+				<attalias Sync="TRUE">RouteDescr</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">RouteOpera</attrlabl>
+				<attalias Sync="TRUE">RouteOpera</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">2</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">EffectiveD</attrlabl>
+				<attalias Sync="TRUE">EffectiveD</attalias>
+				<attrtype Sync="TRUE">Date</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">payleavedi</attrlabl>
+				<attalias Sync="TRUE">payleavedi</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">routepayle</attrlabl>
+				<attalias Sync="TRUE">routepayle</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">RouteClass</attrlabl>
+				<attalias Sync="TRUE">RouteClass</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">20</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">IsPublic</attrlabl>
+				<attalias Sync="TRUE">IsPublic</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">wk_ftrip</attrlabl>
+				<attalias Sync="TRUE">wk_ftrip</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">wk_ltrip</attrlabl>
+				<attalias Sync="TRUE">wk_ltrip</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">wk_span</attrlabl>
+				<attalias Sync="TRUE">wk_span</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">wk_trip_fr</attrlabl>
+				<attalias Sync="TRUE">wk_trip_fr</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">sat_ftrip</attrlabl>
+				<attalias Sync="TRUE">sat_ftrip</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">sat_ltrip</attrlabl>
+				<attalias Sync="TRUE">sat_ltrip</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">sat_span</attrlabl>
+				<attalias Sync="TRUE">sat_span</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">sat_trip_f</attrlabl>
+				<attalias Sync="TRUE">sat_trip_f</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">sun_ftrip</attrlabl>
+				<attalias Sync="TRUE">sun_ftrip</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">sun_ltrip</attrlabl>
+				<attalias Sync="TRUE">sun_ltrip</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">sun_span</attrlabl>
+				<attalias Sync="TRUE">sun_span</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">sun_trip_f</attrlabl>
+				<attalias Sync="TRUE">sun_trip_f</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape_Leng</attrlabl>
+				<attalias Sync="TRUE">Shape_Leng</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr><attrlabl Sync="TRUE">Shape_Le_1</attrlabl><attalias Sync="TRUE">Shape_Le_1</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr></detailed>
+	</eainfo>
+	<mdDateSt Sync="TRUE">20231213</mdDateSt>
+</metadata>
